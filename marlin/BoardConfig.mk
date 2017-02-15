@@ -3,8 +3,8 @@
 # Product-specific compile-time definitions
 #
 
-# Allow Tipsy config to override others
--include device/google/marlin/marlin/BoardConfigTipsy.mk
+# Allow Tesla config to override others
+-include device/google/marlin/marlin/BoardConfigTesla.mk
 
 TARGET_BOARD_PLATFORM := msm8996
 TARGET_BOOTLOADER_BOARD_NAME := marlin

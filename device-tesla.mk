@@ -9,7 +9,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += Snap
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay-tipsy
+DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay-tesla
 
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \

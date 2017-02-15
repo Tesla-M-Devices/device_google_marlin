@@ -3,18 +3,18 @@ TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
 # Inherit Carbon product configuration
-$(call inherit-product, vendor/tipsy/config/common.mk)
+$(call inherit-product, vendor/tesla/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
-# Inherit some common Tipsy stuff.
-$(call inherit-product, vendor/tipsy/config/common_full_phone.mk)
+# Inherit some common tesla stuff.
+$(call inherit-product, vendor/tesla/config/common_full_phone.mk)
 
--include device/google/marlin/marlin/device-tipsy.mk
+-include device/google/marlin/marlin/device-tesla.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := tipsy_marlin
+PRODUCT_NAME := tesla_marlin
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 TARGET_MANUFACTURER := Google
@@ -26,3 +26,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="marlin-user 7.1.1 NOF26W 3637559 release-keys"
 
 $(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Dustin Rinne (f100cleveland)"
