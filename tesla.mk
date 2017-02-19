@@ -10,6 +10,7 @@ $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
 # Inherit some common tesla stuff.
 $(call inherit-product, vendor/tesla/config/common_full_phone.mk)
+$(call inherit-product, vendor/tesla/config/caf_fw.mk)
 
 -include device/google/marlin/marlin/device-tesla.mk
 
