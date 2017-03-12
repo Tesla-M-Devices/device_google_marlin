@@ -450,5 +450,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.adm.buffering.ms=3
 
+# Google Assistant
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opa.eligible_device=true
+
 # Build gapps for now
  $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
