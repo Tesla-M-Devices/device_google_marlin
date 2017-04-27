@@ -19,4 +19,10 @@ BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy/verizon
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
+#Opts
+STRICT_ALIASING := true
+GRAPHITE_OPTS := true
+LOCAL_CLANG_LTO := true
+my_clang := true
+
 -include vendor/google/marlin/BoardConfigVendor.mk
