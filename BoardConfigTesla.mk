@@ -19,6 +19,8 @@ BOARD_SEPOLICY_DIRS += device/google/marlin/sepolicy/verizon
 # Ignore vendor partition audio_effects.conf and use the device (system/etc/) one
 TARGET_IGNORE_VENDOR_AUDIO_EFFECTS_CONF := true
 
+TARGET_USE_DEVICE_AUDIO_EFFECTS_CONF := true
+
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
